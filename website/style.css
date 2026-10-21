@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/TCB_____.TTF') format('truetype');
+    font-weight: 700; /* Bold version */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/TCMI_____.TTF') format('truetype');
+    font-weight: 700; /* Bold Italic version */
+    font-style: italic;
+}
+
+body {
+    font-family: Georgia, serif;
+    color: #F1DBA7;
+    line-height: 1.6;
+    background-color: #53221D;
+}
+
+h1 {
+    font-family: 'MyCustomFont', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+h2 {
+    font-family: 'MyCustomFont', sans-serif;
+    font-weight: 300;
+    font-style: normal; /
+}

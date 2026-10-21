@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+.flex-container {
+  display: flex;
+  gap: 10px;
+}
+
+.box {
+  width: 100%; max-width: 300px;
+  padding: 0px;
+  border: 2px solid rgb(11, 124, 90);
+  margin: 20px;
+  background-color: rgb(230, 173, 191);
+}
+
+.card {
+  padding: 20px;
+  background-color: peachpuff;
+  border: 1px solid #333;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.grid-item {
+  padding: 20px;
+  background-color: lightgreen;
+  border: 1px solid #333;
+}
