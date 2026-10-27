@@ -12,11 +12,20 @@
     font-style: italic;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Georgia, serif;
     color: #F1DBA7;
     line-height: 1.6;
-    background-color: #53221D;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 h1 {
@@ -29,4 +38,60 @@ h2 {
     font-family: 'MyCustomFont', sans-serif;
     font-weight: 300;
     font-style: normal; /
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #F1DBA7;
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #53221D;
+}
+
+.bigbox {
+    background-color: #53221D;
+}
+
+.smallbox {
+    background-color: #95EEC2;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px auto;
+    padding-right: 100px;
+    padding-left: 100px;
+    gap: 0px;
+}
+
+.navbox {
+}
+
+main {
+    flex: 3;
+    background-color: #E3C0DB;
+    padding: 20px;
+    border-radius: 5px;
 }
