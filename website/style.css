@@ -1,64 +1,64 @@
+/*custom fontit*/
 @font-face {
-    font-family: 'MyCustomFont';
-    src: url('fonts/TCB_____.TTF') format('truetype');
+    font-family: "MyCustomFont";
+    src: url(fonts/TCB_____.TTF) format(truetype);
     font-weight: 700; /* Bold version */
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'MyCustomFont';
-    src: url('fonts/TCMI_____.TTF') format('truetype');
+    font-family: "MyCustomFont";
+    src: url(fonts/TCMI_____.TTF) format(truetype);
     font-weight: 700; /* Bold Italic version */
     font-style: italic;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.page-wrapper {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 body {
     font-family: Georgia, serif;
-    color: #F1DBA7;
+    color: #ffffff;
     line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    padding: 20px;
+    justify-content: center;
 }
 
 h1 {
-    font-family: 'MyCustomFont', sans-serif;
+    font-family: "MyCustomFont", sans-serif;
     font-weight: 700;
     font-style: italic;
 }
 
 h2 {
-    font-family: 'MyCustomFont', sans-serif;
+    font-family: "MyCustomFont", sans-serif;
     font-weight: 300;
-    font-style: normal; /
+    font-style: normal;
 }
 
-/* Navigation Bar */
-nav {
-    background-color: #F1DBA7;
+/*header juttuja*/
+header {
+    background-color: #53221D;
     width: 100%;
-    margin: 0 auto;
 }
 
-nav ul {
-    list-style: none;
+header img {
+    max-width: 7rem;
+    height: auto;
+}
+
+header ul {
     display: flex;
-    justify-content: right;
-    gap: 30px;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 1rem;
+    font-size: 16px;
 }
 
-nav li {
+header li a {
     margin: 0;
-}
-
-nav a {
     display: block;
     color: white;
     text-decoration: none;
@@ -66,32 +66,38 @@ nav a {
     transition: background-color 0.3s;
 }
 
-nav a:hover {
-    background-color: #53221D;
-}
-
-.bigbox {
-    background-color: #53221D;
-}
-
-.smallbox {
-    background-color: #95EEC2;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    width: 100%;
-    margin: 20px auto;
-    padding-right: 100px;
-    padding-left: 100px;
-    gap: 0px;
-}
-
-.navbox {
-}
-
+/*main juttuja*/
 main {
-    flex: 3;
-    background-color: #E3C0DB;
-    padding: 20px;
-    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ce3964;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
+
+/*Etusivun juttuja*/
+.home-content {
+    width: 500px;
+    margin: 0 auto;   
+}
+
+.home-img {
+    width: 100%;
+    max-width: 500px;
+    margin: 0;
+}
+
+.home-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Products sivun juttuja*/
+
+/*Content sivun juttuja*/
