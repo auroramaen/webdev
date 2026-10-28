@@ -22,18 +22,18 @@
 body {
     font-family: Georgia, serif;
     color: #ffffff;
-    line-height: 1.6;
+    padding: 0 5rem;
     justify-content: center;
 }
 
 h1 {
-    font-family: "MyCustomFont", sans-serif;
+    font-family: tahoma, sans-serif;
     font-weight: 700;
     font-style: italic;
 }
 
 h2 {
-    font-family: "MyCustomFont", sans-serif;
+    font-family: tahoma, sans-serif;
     font-weight: 300;
     font-style: normal;
 }
@@ -59,31 +59,33 @@ header ul {
 
 header li a {
     margin: 0;
-    display: block;
+    display: flex;
     color: white;
     text-decoration: none;
-    padding: 14px 20px;
+    padding: 20px;
     transition: background-color 0.3s;
 }
 
-/*main juttuja*/
+/*main box juttuja*/
 main {
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: #ce3964;
-    padding-top: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     box-sizing: border-box;
     overflow: hidden;
 }
 
 /*Etusivun juttuja*/
 .home-content {
-    width: 500px;
-    margin: 0 auto;   
+    width: 100%;
+    max-width: 500px;  
+    text-align: center;
 }
 
 .home-img {
@@ -100,4 +102,25 @@ main {
 
 /*Products sivun juttuja*/
 
-/*Content sivun juttuja*/
+/*Contact sivun juttuja*/
+main.contact {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  align-items: center;
+}
+
+.contact-img {
+    width: 100%;
+}
+
+.contact-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    main.contact {
+        grid-template-columns: 1fr;
+    }
+}
