@@ -137,8 +137,8 @@ main.contact {
     display: block;
 }
 
-.contact-text a {
-  color: black;
+.contact-text a:link {
+    color:aqua;
 }
 
 @media (max-width: 600px) {
