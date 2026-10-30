@@ -146,3 +146,17 @@ main.contact {
         grid-template-columns: 1fr;
     }
 }
+
+.screenshots {
+    width: 100%;
+    max-width: 500px;  
+    text-align: center;
+}
+
+.screenshots img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    align-items: center;
+    display: block;
+}
