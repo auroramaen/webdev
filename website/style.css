@@ -137,6 +137,10 @@ main.contact {
     display: block;
 }
 
+.contact-text a {
+  color: black;
+}
+
 @media (max-width: 600px) {
     main.contact {
         grid-template-columns: 1fr;
